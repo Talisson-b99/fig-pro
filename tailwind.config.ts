@@ -8,10 +8,27 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        road: ["var(--font-road)"],
+        rock: ["var(--font-rock)"],
+        mono: ["var(--font-mono)"],
+      },
+      maxWidth: {
+        "1440": "1440px",
+        "1xl": "628px",
+      },
+
+      screens: {
+        desktop: "1360px",
+      },
+      colors: {
+        "gray-medium": "#514B4B",
+        gray: "#868686",
+        secondary: "#FCC26B",
+        primary: "#1B1B1B",
+      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "bg-hero": "url('/bg-hero.png')",
       },
     },
   },
